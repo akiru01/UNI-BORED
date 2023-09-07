@@ -1,0 +1,522 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     overflow: hidden;
+}
+:root{
+     --blue: #287bff;
+     --white: #fff;
+     --black: #222;
+     --gray: #686868;
+}
+.gen-con{
+     display: flex;
+     align-items: center;
+     justify-content: baseline;
+}
+.navigation{
+     width: 20%;
+     background-color: var(--blue);
+     height: 100vh;
+     overflow-y: auto;
+     border-left: 10px solid var(--blue);
+     transition: 0.3s;
+}
+.navigation ul{
+     width: 100%;
+     padding-top: 30px;
+     list-style: none;
+}
+.navigation ul li{
+     /* position: relative; */
+     width: 100%;
+     list-style: none;
+     border-top-left-radius: 50px;
+     border-bottom-left-radius: 50px;
+     line-height: 4rem;
+}
+.navigation ul li a:hover{
+     background: var(--white);
+     color: var(--blue);
+     border-top-left-radius: 50px;
+     border-bottom-left-radius: 50px;
+     border-bottom-right-radius: 0;
+     border-top-right-radius: 0;
+     font-size: 16px;
+}
+.navigation ul li a:focus{
+     background: var(--white);
+     color: var(--blue);
+     border-top-left-radius: 50px;
+     border-bottom-left-radius: 50px;
+     border-bottom-right-radius: 0;
+     border-top-right-radius: 0
+}
+.navigation ul li a .icon{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 60px;
+     height: 50px;
+     line-height: 40px;
+}
+.navigation ul li:nth-child(1){
+     margin-bottom: 40px;
+     pointer-events: none;
+}
+.navigation ul li a{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: baseline;
+     width: 100%;
+     text-decoration: none;
+     color: var(--white);
+}
+.navigation ul li a:hover{
+     color: var(--blue);
+     background-color: white;
+}
+.gen-body{
+     width: 80%;
+     height: 100vh;
+     padding: 20px;
+     overflow-y: auto;
+     transition: 0.3s;
+}
+.topbar{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 30px;
+     background-color: white;
+}
+.topbar .toogle{
+     height: 40px;
+     display: flex;
+     width: fit-content;
+     justify-content: center;
+     align-items: center;
+     background: #ccc;
+     border-radius: 10px;
+     padding: 10px;
+}
+.topbar .toogle:hover{
+     cursor: pointer;
+     background-color: var(--blue);
+}
+.search{
+     /* position: relative; */
+     width: 400px;
+     margin: 0 10px;
+}
+.search label{
+     position: relative;
+     width: 100%;
+}
+.search label input{
+     width: 100%;
+     height: 40px;
+     border-radius: 40px;
+     border: 1px solid gray;
+     padding: 1px 40px;
+     outline: none;
+}
+.search label img {
+     position: absolute;
+     top: 0;
+     left: 10px;
+}
+.user img{
+     height: 45px;
+     border-radius: 50%;
+}
+.subset{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+.subset h2{
+     color: var(--blue);
+}
+.courses,
+.department,
+.faculty{
+     /* padding-top: 20px; */
+     background-color: rgb(243, 243, 249);
+     border-radius: 20px;
+     padding: 20px;
+     height: 150px;
+     width: 100%;
+}
+.container{
+     text-align: center;
+}
+.container1{
+     background-image: url(../images/pretty-black-woman-smiling-pointing-space-her-side.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 350px;
+     border-radius: 20px;
+     padding: 40px;
+     line-height: 3rem;
+     font-weight: bolder;
+     font-size :15px;
+     width: 48%;
+     text-align: start;
+}
+.container1 h2{
+     color: var(--blue);
+}
+.container2{
+     background-image: url(../images/voices.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 350px;
+     width: 48%;
+     border-radius: 20px;
+     padding: 20px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: start;
+}
+.container2 h2{
+     color: var(--blue);
+}
+button a{
+     text-decoration: none;
+     padding: 8px;
+     background-color: var(--blue);
+     color: white;
+     border: 1px solid transparent;
+     border-radius: 11px;   
+}
+button a:hover{
+     background-color: #76aaff;
+     cursor: pointer;
+     font-size: 14px;
+     transition: all 0.5s ease-in-out;
+}
+button{
+     padding: 8px;
+     background-color: var(--blue);
+     color: white;
+     border: 1px solid transparent;
+     border-radius: 11px;
+     font-size: 15px;
+}
+button:hover{
+     background-color: #76aaff;
+     cursor: pointer;
+     font-size: 15px;
+     transition: all 0.5s ease-in-out;
+}
+.mid-sec{
+     margin-bottom: 15px;
+}
+.line{
+     margin: auto;
+     border: 1px solid var(--blue);
+     width: 100%;
+}
+.container3{
+     background-image: url(../images/graduate.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 350px;
+     width: 48%;
+     border-radius: 20px;
+     padding: 30px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: start;
+     line-height: 3rem;
+}
+.container3 h2{
+     color: var(--blue);
+     background-color: rgba(255, 255, 255, 0.709);
+     width: fit-content;
+     border-radius: 10px;
+     padding: 5px;
+}
+.container4{
+     background-image: url(../images/african-american-business-woman.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 350px;
+     width: 48%;
+     border-radius: 20px;
+     padding: 30px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: start;
+     line-height: 3rem;
+}
+.container4 h2{
+     color: var(--blue);
+     background-color: rgba(255, 255, 255, 0.709);
+     width: fit-content;
+     border-radius: 10px;
+     padding: 5px;
+}
+.write-up{
+     padding-right: 20px;
+     padding-left: 10px;
+     width: 35%;
+}
+.write-up h2{
+     color: var(--blue);
+}
+.courses h3{
+     color: var(--blue);
+}
+.department h3{
+     color: var(--blue);
+}
+.faculty h3{
+     color: var(--blue);
+}
+.container5{
+     background-image: url(../images/black-businessman-happy-expression.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 350px;
+     width: 48%;
+     border-radius: 20px;
+     padding: 30px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: start;
+     line-height: 3rem;
+     position: relative;
+}
+.one{
+     position: absolute;
+     right: 40px;
+}
+.container5 h2{
+     color: var(--blue);
+}
+.container6{
+     background-image: url(../images/puzzle.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 350px;
+     width: 48%;
+     border-radius: 20px;
+     padding: 30px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: center;
+     line-height: 3rem;
+}
+.two{
+     margin-top: 80px;
+}
+.container6 h2{
+     color: var(--blue);
+}
+.section h2{
+     color: var(--blue);
+}
+.section{
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+.container7{
+     background-image: url(../images/portrait-young-woman-smiling-isolated.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 450px;
+     object-fit: contain;
+     width: 30%;
+     border-radius: 20px;
+     padding: 5px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: center;
+     line-height: 3rem;
+}
+.container8{
+     background-image: url(../images/young\ woman\ \(2\).jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 450px;
+     width: 30%;
+     border-radius: 20px;
+     padding: 5px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: center;
+     line-height: 3rem;
+}
+.container9{
+     background-image: url(../images/man.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 450px;
+     width: 30%;
+     border-radius: 20px;
+     padding: 5px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: center;
+     line-height: 3rem;
+     object-fit: cover;
+}
+.container10{
+     background-image: url(../images/confident-young-businesswoman-looking-camera.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 450px;
+     width: 30%;
+     border-radius: 20px;
+     padding: 5px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: center;
+     line-height: 3rem;
+     object-fit: cover;
+}
+.container11{
+     background-image: url(../images/portrait-smiling-african-american-male-college-student-walking-with-coffee-isolated-white-wall.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 450px;
+     width: 30%;
+     border-radius: 20px;
+     padding: 5px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: center;
+     line-height: 3rem;
+     object-fit: cover;
+}
+.container12{
+     background-image: url(../images/businesswoman-office-attire-smiling-looks-confident-happy.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 450px;
+     width: 30%;
+     border-radius: 20px;
+     padding: 5px;
+     line-height: 2rem;
+     font-weight: bolder;
+     font-size: 15px;
+     text-align: center;
+     line-height: 3rem;
+     object-fit: cover;
+}
+.subset1{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     width: 100%;
+}
+.write-in{
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.7);
+     margin-top: 320px;
+     border-radius: 20px;
+     font-size: 15px;
+}
+.write-in h3{
+     color: var(--blue);
+}
+.subcon{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.sec-1 div h3{
+     font-size: 25px;
+     text-align: center;
+}
+.sec-1 div h2{
+     font-size: 30px;
+     text-align: center;
+     color: var(--blue);
+}
+.subset2{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin-bottom: 20px;
+     margin-top: 20px;
+}
+.nav-foot{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     background-color: white;
+     color: blue;
+}
+.insert{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.insert input{
+     padding: 13px;
+     border-radius: 10px;
+     border: 1px solid transparent;
+     padding-right: 90px;
+}
+.insert input:focus{
+     border: 1px solid transparent;
+}
+.insert button{
+     position: relative;
+     margin-left: -85px;
+}
+.insert button:hover{
+     font-size: 14.5px;
+}
+footer{
+     background-color: var(--blue);
+     color: var(--white);
+}
+footer .section ul li{
+     margin: 20px;
+     list-style: none;
+}
+footer .section ul li a{
+     text-decoration: none;
+     color: var(--white);
+}
+.navigation-hidden{
+     width: 0%;
+     display: none;
+}
+.navigation-hidden + .gen-body-full{
+     width: 100%;
+}

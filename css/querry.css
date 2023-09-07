@@ -1,0 +1,147 @@
+@media screen and (max-width : 875px) {
+     *{
+          font-size: 15px;
+     }
+     button{
+          font-size: 9px;
+     }
+     button:hover{
+          font-size: 9px;
+     }
+     .insert input{
+          padding: 9px;
+     }
+     .insert button{
+          margin-left: -60px;
+     }
+     .container1,
+     .container2,
+     .container3,
+     .container4{
+          padding-top: 20px;
+          padding: 15px;
+     }
+     .title,
+     .title1{
+          display: none;
+     }
+     .navigation{
+          width: 10%;
+     }
+     .gen-body{
+          width: 90%;
+     }
+     .courses,
+     .department,
+     .faculty{
+          font-size: 10px;
+     }
+     .set-align{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+     .subset1{
+          display: block;
+     }
+     .container7,
+     .container8,
+     .container9,
+     .container10,
+     .container11,
+     .container12{
+          height: 400px;
+          width: 90%;
+          margin-bottom: 20px;
+     }
+     .write-in{
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-top: 250px;
+          font-size: 5px;
+          width: 100%;
+          font-size: 10px;
+     }
+}
+@media screen and (max-width : 580px) {
+     .courses,
+     .department,
+     .faculty{
+          height: 200px;
+     }
+}
+@media screen and (max-width : 570px) {
+     *{
+          font-size: 10px;
+     }
+     .one{
+          right: 10px;
+     }
+     .set-1{
+          display: block;
+     }
+     .container1,
+     .container2,
+     .container3,
+     .container4{
+          width: 100%;
+          padding: 30px;
+          margin-bottom: 20px;
+          height: 250px;
+     }
+     .toogle{
+          height: 30px;
+          width: 20%;
+          padding: 10px;
+     }
+     .search{
+          width: 180px;
+     }
+     .search label img {
+          height: 20px;
+     }
+     .navigation{
+          width: 15%;
+     }
+     .gen-body{
+          width: 85%;
+     }
+     .courses,
+     .department,
+     .faculty{
+          font-size: 5px;
+          height: 130px;
+          text-align: center;
+          margin-bottom: 20px;
+     }
+     .write-up{
+          font-size: 6px;
+     }
+     .container5,
+     .container6{
+          height: 200px;
+     }
+     .two{
+          margin-top: 20px;
+     }
+     .icon img{
+          height: 20px;
+     }
+     .container7,
+     .container8,
+     .container9,
+     .container10,
+     .container11,
+     .container12{
+          height: 280px;
+          width: 90%;
+          margin-bottom: 20px;
+     }
+     .write-in{
+          width: 100%;
+          /* padding-top: 10px; */
+          padding: 10px;
+          margin-top: 180px;
+          font-size: 10px;
+     }
+}
